@@ -23,7 +23,7 @@ public class EmployeeService {
         return employeeRepository.findById(id).orElseThrow();
     }
 
-    public Employee addEmployee(Employee e1) throws IllegalStateException{
+    public Employee addEmployee(Employee e1) throws IllegalStateException {
         List<Employee> employees = employeeRepository.findAll();
         int i=0;
         while(i<employees.size()){

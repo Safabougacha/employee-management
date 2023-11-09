@@ -32,7 +32,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/employee")
-    public Employee addEvent(@RequestBody @Valid Employee employee){
+    public Employee addEmployee(@Valid Employee employee){
         return employeeService.addEmployee(employee);
     }
     @PutMapping("/employee/{id}")
